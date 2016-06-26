@@ -1,0 +1,193 @@
+/* 
+  Localizable.strings
+  Smart Secure
+
+  Created by Constanza Areco on 08/07/13.
+  Copyright (c) 2013 Smart Secure. All rights reserved.
+*/
+
+
+"Error" = "Error";
+"OK" = "OK";
+"Accept" = "Accept";
+"Send" = "Send";
+"Cancel" = "Cancel";
+
+"XMLConfigurationFileError" = "There was an error reading the configuration file. Please contact your service provider.";
+
+"ServiceUnavailableErrorText" = "The server is not avaiable. Please try again in a few minutes.";
+
+"ServerErrorText" = "An internal server error has occured. Please try again.";
+
+
+// Enter Credentials
+
+"EnterCredentialsText" = "Please enter your credentials";
+"UserText" = "Username";
+"PasswordText" = "Password";
+"LoginButtonText" = "Login";
+"UserPasswordEmptyError" = "The ´Username´ and ´Password´ fields can't be empty";
+"CredentialsInvalidText" = "Invalid credentials. Please try again.";
+
+// Terms and Conditions
+
+"TermsAndContitionsTitle" = "Terms and Conditions";
+"WelcomeText" = "Welcome!";
+
+"TermsAndConditionsText" = "TÉRMINOS Y CONDICIONES DEL SERVICIO 'SMARTSECURE'
+
+TopGrade Soluciones SA, le da la bienvenida a 'SmartSecure', el servicio diseñado para Grupos Cerrados, que proporciona un sistema de alerta mediante la utilización de un denominado 'Botón de Seguridad',  instalable en los teléfonos celulares 'SmartPhones' (Teléfonos inteligentes) de sus integrantes, manteniendo al Grupo Cerrado informado, otorgando una herramienta efectiva de comunicación ante los eventos que los responsables del Grupo Cerrado definan.
+Esta diseñado y construido para soportar una arquitectura combinada con componentes tales como: Servidores de Datos, Bases de Datos, Sistemas Operativos, Redes Celulares de las Operadoras de Telefonía y dispositivos móviles, tales como teléfonos celulares inteligentes, tablets, notebooks, netbooks y demás dispositivos con capacidades de navegación de páginas de internet que soporten protocolos seguros de comunicación.
+El servicio propone 2 (dos) funciones de uso bien diferenciadas entre si: 1) destinadas a ser instaladas en los teléfonos celulares y 2) funciones de instalación, soporte, uso y mantenimiento del Grupo Cerrado disponible a través de tecnología WEB, accesible con cualquier navegador con capacidad de soportar protocolos seguros de comunicación.
+
+1) Funciones que el servicio provee para los SmartPhones:
+Aplicación Botón de Seguridad y Sistema Comunicacional SmartSecure : Consta de un programa instalable en los teléfonos celulares Smartphone que brinda la capacidad de presionar un icono gráfico e intuitivo que representa un botón de seguridad con la capacidad de agregar información predeterminada por el Grupo Cerrado y/o de escribir un mensaje definido por el Miembro del Grupo Cerrado. En la misma pantalla se provee la facilidad de acceder al subsistema comunicacional donde el Miembro del Grupo Cerrado podrá leer la mensajería que el Grupo Cerrado haya decidido transmitir a través de los responsables que defina oportunamente.
+Aplicación Sistema Comunicacional SmartCommunity : Consta de un programa instalable en los teléfonos celulares Smartphone que brinda la facilidad de acceder al subsistema comunicacional donde el Miembro del Grupo Cerrado podrá leer la mensajería que el Grupo Cerrado haya decidido transmitir a través de los responsables que defina oportunamente.
+
+2) Funciones que el servicio provee para su instalación, soporte, uso y mantenimiento del Grupo Cerrado, accesible por navegadores con capacidad de para:
+Generación del Grupo Cerrado
+Parametrización del modo y tipo de mensajería para los eventos del Grupo Cerrado
+Incorporación de los 'Jefe de Familia' para la carga inicial del Sistema
+Actualización de los datos de los 'Jefes de Familia'
+Incorporación de los miembros del Grupo Cerrado a través de las invitaciones de los 'Jefes de Familia'
+Actualización de los datos de los miembros del Grupo Cerrado
+Funciones de lectura y moderación de los eventos que el Grupo Cerrado decida crear y administrar
+Funciones de autorización y denegación de miembros en el Grupo Cerrado
+Funciones de alta, baja y modificación en general de los parámetros de sistema y su comportamiento que oportunamente y en detalle se vayan incorporando a los sistemas comunicacionales y servicio en general de SmartSecure y SmartCommunity.
+
+La infraestructura sobre la que funciona el servicio consta de los siguientes componentes desde los cuales combinados entre si permite brindar el servicio de SmartSecure y SmartCommunity:
+
+Núcleo del Sistema SmartSecure y SmartCommunity
+Este componente es de propiedad de TopGrade Soluciones SA y es aquí donde reside la lógica comunicacional del servicio, parámetros y bases de datos y reglas necesarias para resolver la lógica comunicacional de cada Grupo Cerrado.
+Redes de Comunicación Celular con capacidad de tráfico de datos
+Este componente es responsabilidad de cada miembro que se suscribe voluntariamente al servicio y será su propia responsabilidad la elección de la operadora que contrate, modo y velocidad. El servicio de SmartSecure y SmartCommunity requiere obligatoriamente que los Smartphone asociados al Grupo Cerrado cuenten con señal de telefonía celular con capacidad de tráfico de datos para poder comunicar la mensajería generada por el Grupo Cerrado. La disponibilidad de señal celular o de transporte de datos no es responsabilidad del servicio SmartSecure y/o SmartCommunity y/o de TopGrade Soluciones SA.
+Teléfonos Celulares Inteligentes (SmartPhone)
+Los teléfonos celulares inteligentes (SmartPhone) son requerimiento obligatorio para que se puedan instalar la funcionalidad provistas por este servicio mencionadas anteriormente. Es responsabilidad del miembro del Grupo Cerrado proveerse un SmartPhone que cumpla con los requerimientos mínimos que se expresan de acuerdo a cada plataforma en  HYPERLINK 'http://www.smartsecure.com.ar' www.smartsecure.com.ar. Para la función de posicionamiento geográfico provisto por la función instalable en el Smartphone es obligatorio que el mismo posea GPS y el mismo este activado y se le haya permitido al software provistos por TopGrade Soluciones SA hacer uso del mismo en el momento de la instalación del producto. La provisión, actualización, uso, mantenimiento, elección o provisión del dispositivo SmartPhone en si mismo no es responsabilidad del servicio SmartSecure y/o SmartCommunity y/o de TopGrade Soluciones SA.
+Servicio de Internet WIFI
+El Servicio SmartSecure y/o SmartCommunity puede utilizar la modalidad de WIFI para conectarse con el Núcleo del Sistema y utilizar esta vía como medio de transporte alternativo de datos. Es responsabilidad de cada miembro del Grupo Cerrado contratar, configurar, conectar, autorizar y mantener la conexión de estos servicios y modalidad de conexión con el SmartPhone de su propiedad. La provisión, actualización, uso, mantenimiento, elección o provisión del servicio de WIFI e internet a través de estos dispositivos no es responsabilidad del servicio SmartSecure y/o SmartCommunity y/o de TopGrade Soluciones SA.
+Servicio de Mensajería
+El Servicio de tráfico de mensajería SmartSecure y SmartCommunity pose la capacidad de traficar la mensajería que genera a través los siguientes canales o modos:
+Mensajería Propia (Datos): Se refiere a la función de lectura de la comunicación de los mensajes del Grupo Cerrado a través de la aplicación nativa provista. Esta función no genera costos adicionales y está sujeta a las condiciones anteriormente mencionadas.
+Mail o Correo electrónico (Datos): Los mensajes pueden ser direccionados a las casillas de correo que han sido declaradas por los miembros del Grupo Cerrado al momento de asociarse al servicio. Esta función no genera costos adicionales y está sujeta a las condiciones anteriormente mencionadas. Es responsabilidad del  Miembro del Grupo Cerrado asegurar que el mismo no sea calificado como SPAM, tomando las medidas necesarias que su propio dominio le sugiera.
+SMS o Mensajería instantánea (Servicio de Mensaje corto de Texto): Los mensajes del Grupo puede enviarse a través de mensajes de textos a los teléfonos celulares en general y generan costos adicionales que se tarifan adicionalmente y generan costo por cada mensaje enviado a cada teléfono celular desde el Núcleo del Sistema. El consumo y costo a este respecto será informado oportunamente en cada vencimiento de cada mes. La activación de la parametrización  de la vía SMS de comunicación en la herramienta por parte de los administradores del Grupo Cerrado otorga el derecho de facturar y cobrar los costos adicionales de los SMS enviado a cada teléfono celular a TopGrade Soluciones SA.
+Los tiempos de enrutamiento, orden de llegada del SMS, priorización del SMS, inyección en la red, generación e incorporación del SMS a las redes telefónicas y la efectiva recepción en el teléfono celular es responsabilidad de la compañía de telefonía celular que haya contratado oportunamente el Miembro de la Red Cerrada.
+
+¿Cómo Funciona el Servicio?
+El servicio brindado por TopGrade Soluciones SA para sus productos SmartSecure y SmartCommunity se limita a poner en disponibilidad en el mas alto porcentaje posible la funcionalidad provista por el Núcleo del Sistema y la de los aplicativos instalados en los SmartPhones de cada uno de los integrantes del Grupo Cerrado.
+El servicio también incluye monitoreo de núcleo y la o las correcciones de cada capa del aplicativo que así lo requiera. TopGrade Soluciones SA disponibilizará a través de los mecanismos que entienda como correctos las modificaciones, correcciones y evoluciones que la aplicación requiera.
+El servicio está creado, concebido y liberado para traficar 2 (dos) grandes grupos de información: La información de seguridad, que se comunica a través de SmartSecure y la información social del Grupo Cerrado, que tenga que ver con aquello no vinculado a temas de Seguridad, a través de SmartCommunity.
+TopGrade Soluciones SA en ningún caso y bajo ningún concepto monitorea, revisa, modera, agrega, elimina, modifica o ejecuta cualquier acción concerniente con el contenido de cada mensaje que se trafica en el Grupo Cerrado. Tampoco inicia eventos, genera alertas de seguridad o comunica mensajería de ninguna clase a través de las herramientas comunicacionales. En todos los casos la mensajería es propiedad y responsabilidad exclusiva del Grupo Cerrado que la genera.
+Los responsables, moderadores y cada miembro del Grupo cerrado son responsables en forma exclusiva de la mensajería que consignan y trafican en la herramienta y de las reglas de comunicación que parametrice para su distribución dentro del Grupo Cerrado.
+El uso de las herramientas provistas por TopGrade Soluciones SA para realizar alertas de Seguridad y Comunicaciones son de exclusiva responsabilidad del Grupo Cerrado y del/los firmantes de la contratación del servicio, exonerado de esta manera a TopGrade Soluciones SA de cualquier mal uso, desvirtuación o responsabilidad de cualquier tipo acerca del contenido de cada mensaje enviado y el propósito de cada uno.
+Adicionalmente, forma parte del servicio de TopGrade Soluciones SA los siguientes procesos de Soporte y Capacitación:
+Lineamientos Generales de la Herramienta: Introduce a los administradores del sistema acerca de las generalidades de la herramienta y acerca de los diferentes usos de las aplicaciones entregadas.
+Capacitación de Moderador: Capacita al Moderador designado por el Grupo Cerrado en las Funcionalidades de la aplicación de la Moderación de la mensajería de SmartSecure y de SmartCommunity, de manera tal que pueda capacitar a su vez al resto del equipo de moderación.
+Capacitación para Parametrización: Se capacita en las diferentes capacidades de parametrización/adecuación del comportamiento de las herramientas.
+Soporte PostVenta y Correctivo: TopGrade Soluciones SA solucionará inconvenientes que se reporten y que estén vinculados al correcto uso de la herramienta, asimismo atenderá consultas vinculadas a cambios en la parametrización de la herramienta que los administradores del Grupo Cerrado deseen realizar.
+
+El funcionamiento previsto para la herramienta propone los siguientes casos:
+SmartSecure: Alerta de Seguridad generada por un Miembro del Grupo Cerrado
+SmartSecure: Generación de un Evento convirtiendo la Alerta de Seguridad en un suceso que se comunica a todo el Grupo Cerrado. Este suceso permite que se informen mensajes automáticos que se hayan predefinido oportunamente en el procesos de parametrización del Sistema y los mensajes especiales (Moderación) o 'Comunicaciones EN VIVO' (es decir, en el momento que esta ocurriendo) de lo que sucede durante el suceso iniciado a todos los integrantes del Grupo Cerrado. Se prevé un mensaje de FIN DE SUCESOcuando el moderador en control del suceso  decida terminar la comunicación del mismo.
+SmartSecure: Lectura y asociación de Alertas de Seguridad o comunicaciones de Miembros del Grupo Cerrado al Suceso en control de un  Moderador.
+SmartSecure: En todos y para todos lo casos, la herramienta comunica unidireccionalmente a los miembros del Grupo Cerrado con el moderador en control del suceso y al moderador en control del suceso con los miembros del Grupo Cerrado. La herramienta SmartSecure no prevé comunicaciones entre los miembros del Grupo Cerrado SIN la intervención del Moderador. Resumiendo: TODOS se comunican con UNO y UNO comunica a TODOS.
+SmartCommunity: Se prevé la comunicación de mensajería de carácter social e informativo a subgrupos del Grupo Cerrado denominados afinidad.
+
+El uso de nuestro servicio
+Para acceder a las funciones básicas del Servicio a través de su dispositivo móvil Smartphone, el Miembro del Grupo Cerrado tendrá que registrarse en los sitios de  'SmartSecure' y crear una cuenta sujeta a la posterior habilitación por parte de los administradores del Grupo Cerrado.
+Queda prohibida la utilización del servicio por cualquier Miembro del Grupo Cerrado que no sea habilitado, aprobado y activado por los protocolos de aceptación de 'SmartSecure' y del Grupo Cerrado.
+Para completar la instalación del Software Instalable en el dispositivo móvil Smartphone, el Miembro del Grupo Cerrado deberá proporcionar la información solicitada en forma precisa y completa.
+El Miembro del Grupo Cerrado será el único responsable de las acciones que se realicen con la aplicación. Si para el proceso de alta del servicio se necesitare una contraseña, el Miembro del Grupo Cerrado deberá mantenerla en forma segura, siendo personal e intransferible.
+Al proporcionar su dirección de correo electrónico y su número de celular a TopGrade Soluciones SA el Miembro del Grupo Cerrado otorga su consentimiento explícito e unívoco para que, mediante dicha dirección de correo electrónico, se le envíen notificaciones relacionadas con el Servicio.
+Asimismo, el Miembro del Grupo Cerrado acepta que TopGrade Soluciones SA pueda utilizar  su dirección de correo electrónico o número de teléfono móvil para enviarle mensajes, incluyendo cambios en las características del Servicio, sin necesidad de ninguna notificación fehaciente con anterioridad a la realización de los cambios.
+El Miembro del Grupo Cerrado acepta utilizar el Servicio únicamente de acuerdo con la política de uso establecida en esta Acuerdo Comercial y de Servicios, y conforme a las normas legales que sean  aplicables.
+TopGrade Soluciones SA declina toda responsabilidad sobre el uso ilegítimo y malicioso que el Miembro del Grupo Cerrado y/o cliente y/o moderador puedan dar a la aplicación 'SmartSecure' y 'SmartCommunity', que difiera respecto a la utilización que se describe en este documento y/o que el Cliente y/o Empresa Contratante y/o Grupo Cerrado haya celebrado con TopGrade Soluciones SA.
+
+Contenido del Miembro del Grupo Cerrado
+El Miembro del Grupo Cerrado acepta que TopGrade Soluciones SA actúa como proveedor pasivo para su distribución en línea del software 'SmartSecure' y 'SmartCommunity', y en ese sentido se compromete a cumplir con la política de uso que se determina en estas condiciones.
+TopGrade Soluciones SA no asume ninguna responsabilidad por cualquier daño que se produzca en el contenido que el Miembro del Grupo Cerrado disponga en la terminal Smartphone, donde se instale la aplicación 'SmartSecure' y 'SmartCommunity'.
+
+Concesión de licencia
+Al publicar los Contenidos del Miembro del Grupo Cerrado en el Servicio, éste acepta y concede a TopGrade Soluciones SA, en forma gratuita, transmisible, transferible, perpetua, irrevocable, y no exclusiva, la utilización, reproducción, modificación, publicación, información sobre listas, edición, traducción, distribución, ejecución, exhibición pública, realización de obras derivadas de todo el Contenido del Miembro del Grupo Cerrado, su nombre, voz y/o la imagen que figura en su contenido de Miembro del Grupo Cerrado, en su totalidad o en parte, y en cualquier formato, medio o tecnología (conocida actualmente o desarrollada posteriormente), en forma exclusiva para su uso en relación con el Servicio.
+
+Licencias de Miembro del Grupo Cerrado
+La aplicación 'SmartSecure', 'SmartCommunity', 'SmartEagle' se encuentra sujeto a los términos y condiciones de esta Propuesta de servicio y de las condiciones contractuales celebradas con el Cliente y/o empresa adquiriente, por el que se concede una licencia no exclusiva, limitada y personal para utilizar el Servicio. TopGrade Soluciones SA se reserva todos los derechos no expresamente concedidos aquí en el Servicio y del software 'SmartSecure', 'SmartCommunity', 'SmartEagle'.
+Para utilizar las aplicaciones el Miembro del Grupo Cerrado, debe poseer un dispositivo móvil Smartphone que sea compatible con el Servicio. TopGrade Soluciones SA no garantiza que el Servicio de 'SmartSecure' y 'SmartCommunity' sea compatible con su dispositivo móvil Smartphone, no asumiendo responsabilidad alguna ante tal situación.
+Concesión de licencia: TopGrade Soluciones SA le otorga al Miembro del Grupo Cerrado una licencia no exclusiva, intransferible y revocable para utilizar una copia el código compilado del Software 'SmartSecure' y 'SmartCommunity' en un dispositivo móvil Smartphone, ya sea éste de su  propiedad o que el mismo haya sido adquirido por éste por cualquier otro título, para su uso personal.
+Restricciones: El Miembro del Grupo Cerrado no puede: (i) modificar en todo o en parte, desensamblar, descompilar o realizar ingeniería inversa del software 'SmartSecure' y/o 'SmartCommunity', (ii) alquilar, arrendar, ceder, prestar, vender y/o transferir por cualquier medio sublicencias, distribuir o transferir la aplicación 'SmartSecure' y/o 'SmartCommunity' a terceros, ni utilizar la aplicación 'SmartSecure' y/o 'SmartCommunity' para proporcionar a Tiempo Compartidos o servicios similares de cualquier tercero, (iii) realizar copias del Software 'SmartSecure' y/o 'SmartCommunity', (iv) suprimir, eludir, deshabilitar, dañar o interferir con la seguridad, y demás características relacionadas con la aplicación 'SmartSecure' y/o 'SmartCommunity', características que impidan o limiten el uso o copia de cualquier contenido accesible a través del Software 'SmartSecure' y/o 'SmartCommunity', o las características que imponen limitaciones en el uso del Software 'SmartSecure' y/o 'SmartCommunity'.
+Actualizaciones de software: El Miembro del Grupo Cerrado acepta que TopGrade Soluciones SA podrá lanzar versiones actualizadas del Software 'SmartSecure' y/o 'SmartCommunity' y que quedará a criterio de TopGrade Soluciones SA determinar el costo económico que puede conllevar la actualización del Software 'SmartSecure' y/o 'SmartCommunity'. En caso de actualización del Software 'SmartSecure' y/o 'SmartCommunity' por parte del Miembro del Grupo Cerrado, este acepta que los términos y condiciones de la presente Propuesta de servicio se aplicará a todas las actualizaciones realizadas . Sin perjuicio de lo expuesto, previo a producirse la actualización, y en la medida que esta tuviera un costo para el Miembro del Grupo Cerrado, TopGrade Soluciones SA comunicará tal extremo con antelación suficiente.
+Derechos reservados. La concesión de la licencia en virtud de esta Propuesta de servicios no constituye una venta y/o transferencia del Software 'SmartSecure' y/o 'SmartCommunity' o cualquiera de sus copias. TopGrade Soluciones SA mantiene todos los derechos, títulos e intereses sobre la aplicación 'SmartSecure' y/o 'SmartCommunity' (y cualquier copia del mismo). Cualquier intento de transferir cualquiera de los derechos, deberes u obligaciones, a excepción de lo expresamente dispuesto en la presente Propuesta de servicio, se considerará nulo. TopGrade Soluciones SA se reserva todos los derechos no expresamente concedidos en la presente Propuesta de servicio.
+
+Derechos de propiedad
+Todos los derechos de propiedad, títulos e intereses sobre y para el servicio,  todos los materiales del mismo o transferidos de ese modo, incluyendo, sin limitación, software, imágenes, texto, gráficos, ilustraciones, logotipos, patentes, marcas registradas, marcas de servicio, derechos de autor, fotografías, audio, videos, música y contenido de Miembro del Grupo Cerrado (el Contenido 'SmartSecure' y/o 'SmartCommunity' ) son y seguirán siendo propiedad exclusiva de TopGrade Soluciones SA y sus licenciatarios. El Cliente y/o Miembro del Grupo Cerrado se compromete a no vender, licenciar, alquilar, modificar, distribuir, copiar, reproducir, trasmitir, mostrar públicamente, ejecutar públicamente, publicar, adaptar, editar o crear trabajos derivados de cualquier material o contenido accesible en el Servicio. El uso del software 'SmartSecure' y/o 'SmartCommunity' para cualquier propósito que no este expresamente permitido por esta Propuesta de servicios queda estrictamente prohibido.
+
+Privacidad
+TopGrade Soluciones SA se obliga a guardar la máxima reserva y secreto sobre la información que sea clasificada como confidencial, a no divulgar dicha información, así como también a no publicarla por si o por terceras personas sean estas físicas o jurídicas. Resultando necesario el consentimiento por parte del Miembro del Grupo Cerrado en forma fehaciente para la utilización por cualquier forma y/o medio de dicha información.  A los efectos de esta Propuesta de servicios, será considerada como información confidencial, toda la información susceptible de ser revelada de palabra, por escrito o por cualquier otro medio o soporte, tangible o intangible, necesaria para el uso del software 'SmartSecure' y/o 'SmartCommunity'.
+TopGrade Soluciones SA garantiza el pleno cumplimento de la normativa sobre medidas de seguridad y protección de datos según lo establecido por las normas aplicables en la República Argentina.
+TopGrade Soluciones SA se compromete a cumplir las medidas de seguridad respecto de la información confidencial brindada, dándole el mismo tratamiento que la utilizada para su propia información confidencial, asumiendo las siguientes obligaciones:
+Acceder a la 'información confidencial' cuando sea necesario para cumplir con las obligaciones establecidas para las partes en la presente Propuesta de Servicios.
+Utilizar los datos de carácter personal a los que tenga acceso única y exclusivamente para cumplir con sus obligaciones contractuales.
+Observar y adoptar cuantas medidas de seguridad sean necesarias para resguardar la confidencialidad, secreto e integridad de los datos de carácter personal a los que tenga acceso, así como a adoptar en el futuro cuantas medidas de seguridad sean exigidas por las leyes y reglamentos destinadas a preservar el secreto, la confidencialidad e integridad en el tratamiento automatizado de los datos personales.
+No ceder en ningún caso a terceras personas por cualquier medio los datos de carácter personal a los que tengan acceso, ni  siquiera a efectos de su conservación.
+
+Seguridad
+TopGrade Soluciones SA garantiza las medidas técnicas y organizativas destinadas a implementar la configuración de privacidad y seguridad de su información personal y evitar perdidas accidentales o el acceso, uso, alteración o divulgación no autorizada.
+
+Enlaces de terceros
+'SmartSecure' y/o 'SmartCommunity' puede contener enlaces a sitios Web de terceros. TopGrade Soluciones SA no asume ninguna responsabilidad derivada del contenido, de las políticas de privacidad o las practicas de sitios Web o servicios de terceros. Por ende, TopGrade Soluciones SA no asume ninguna responsabilidad por el contenido, las políticas de privacidad o las prácticas de los sitios Web o servicios de terceros. Si el Miembro del Grupo Cerrado accede a un sitio Web de tercero desde 'SmartSecure' y/o 'SmartCommunity' lo hace bajo su propia responsabilidad y riesgo, aceptando que esta propuesta de Servicio y Política de privacidad no será de aplicación al uso de tales sitios. El Miembro del Grupo Cerrado expresamente libera a TopGrade Soluciones SA de cualquier responsabilidad que surja del uso de cualquier sitio Web o servicios de terceros a los que se pueda acceder a través del Software 'SmartSecure' y/o 'SmartCommunity'.
+
+Responsabilidad
+A) Queda expresamente establecido que TopGrade Soluciones SA con su servicio 'SmartSecure' y/o 'SmartCommunity' no resultan ser empresas de seguridad privada. No garantizando por ello la eficacia de los procedimientos necesarios para  prevenir y/o reprimir los acontecimientos que dieron lugar a la aplicación del sistema de alerta y/o la utilización por cualquier motivo del 'botón de seguridad', TopGrade Soluciones SA no será responsable frente al Miembro del Grupo Cerrado por los daños y perjuicios que le puedan ser ocasionados bajo las siguientes circunstancias:
+(i) el uso y acceso al Servicio negligente o doloso por parte del Miembro del Grupo Cerrado o cualquier miembro del Grupo Cerrado, incluyendo administradores, moderadores, etc..
+(ii) incumplimiento por parte del Miembro del Grupo Cerrado o de cualquier integrante del Grupo Cerrado de cualquier término detallado en esta Propuesta de servicio,
+(iii) la violación de cualquier derecho de terceros, incluyendo, sin limitación, cualquier derecho de privacidad, derecho de publicidad o derechos de propiedad intelectual, salvo que existiera un accionar negligente por parte de TopGrade Soluciones SA,
+(iv) la violación de las normas legales vigentes que rijan en el país referidas al uso de software 'SmartSecure' y/o 'SmartCommunity', y en relación con el servicio de Geolocalización y alertas de seguridad, siempre que no sea atribuible al accionar de TopGrade Soluciones SA,
+(v) el acceso indebido por terceras personas, o el uso del Servicio utilizando el nombre, contraseña o cualquier otro código único de seguridad del Miembro del Grupo Cerrado, o
+(vi) la utilización del servicio para encontrar a otro Miembro del Grupo Cerrado o persona.
+B) El Miembro del Grupo Cerrado declara conocer y aceptar que el Servicio constituye sólo un medio para prevenir y mitigar los daños que pueda tener el Miembro del Grupo Cerrado como consecuencia de la comisión de actos delictivos o dañosos, y que TopGrade Soluciones SA no garantiza ni asegura al Cliente que tales actos no se produzcan. En consecuencia, TopGrade Soluciones SA no será responsable de los daños y perjuicios que se ocasionen a personas o bienes como consecuencia de la comisión de tales actos. TopGrade Soluciones SA no será responsable por las fallas de comunicación, caídas en el servicio de telefonía móvil o señal celular, congestionamiento, o cualquier otro inconveniente comunicacional desarrollado por terceras personas que no permita llevar a cabo la prestación del servicio.
+C) TopGrade Soluciones SA no es responsable de las operaciones manuales y del criterio adoptado en el procedimiento que debe asumir el 'Moderador' o de la eficiencia de los procedimientos fijados por el Cliente y/o la empresa contratante (en caso de existir esta figura),  éste deberá cumplimentar en tiempo y forma las responsabilidades de su función, de omitir o dilatar en el tiempo alguna de sus funciones, éstas serán totalmente atribuibles al mismo deslindando de responsabilidad alguna a TopGrade Soluciones SA.
+D) TopGrade Soluciones SA, no será responsable por daños y perjuicios que pudieran ser ocasionados al Miembro del Grupo Cerrado como consecuencia de:
+(a) El uso, revelación, muestra o conservación de su información de ubicación,
+(b) el uso o imposibilidad de uso del servicio,
+(c) el servicio en general, esta aplicación, o los sistemas que mantienen los servicios de 'SmartSecure' disponibles,
+(d) cualquier otra interacción con 'SmartSecure' o cualquier otro Miembro del Grupo Cerrado de los servicios 'SmartSecure'.
+
+Aspectos Generales
+A. Procedimientos de notificación: TopGrade Soluciones SA podrá enviar notificaciones para informar sobre sus productos o para otros fines empresariales relacionados, por medio de correo electrónico, carta, correo postal o a través de su publicación en su página Web.
+B. Esta Propuesta de servicio constituye el marco regulatorio entre el Miembro del Grupo Cerrado, el Cliente y/o empresa contratante y/o Grupo Cerrado y TopGrade Soluciones SA con respecto al servicio de  'SmartSecure' y/o 'SmartCommunity'. La invalidez o ineficacia de alguna disposición de esta propuesta, declarada judicialmente, no afectará a la validez de las restantes disposiciones de esta Propuesta de servicio, que permanecerán con plena eficacia.
+C. Legislación aplicable y jurisdicción. A todos los efectos legales derivados la aplicación de los términos y condiciones del presente, se regirá por las disposiciones legales vigentes en la República Argentina, y será competente la justicia ordinaria con jurisdicción en la Ciudad de Buenos Aires.
+D. Cambios y modificaciones. Esta Propuesta de servicio puede ser revisada periódicamente. El uso continuado del servicio 'SmartSecure'  constituye la aceptación de esta propuesta y cualquier enmienda.
+E. La validez de los términos y condiciones establecidos en el presente instrumento mantendrán vigencia mientras cualquiera de las partes no manifieste en forma fehaciente y con una antelación no menor a noventa (90) días su voluntad de rescindir o de no renovación por el vencimiento del plazo establecido en el contrato.
+F. El presente documento podría ser complementado por documentos que cada Grupo Cerrado genere para si mismo siempre  consistente en un todo de acuerdo con el presente documento. Para todos los casos el presente documento prevalece por sobre cualquier agregado que el Grupo Cerrado agregue a las condiciones de uso particulares del mismo.
+Los responsables del Grupo Cerrado, Miembro del Grupo Cerrado y/o entidad adquiriente del servicio manifiesta que ha leído, entendido y aceptado todas las condiciones y especificaciones detalladas, y que quedará vinculado comercialmente a TOPGRADE S.A. por medio de estas Condiciones de Uso.
+La presente propuesta de servicios se aplicará a todos los que tengan acceso a la aplicación ('Miembro del Grupo Cerrados', 'Clientes', 'Entidad Adquiriente y/o Contratatante', 'Grupo Cerrado').  TOPGRADE SOLUCIONES S.A., en adelante TOPGRADE S.A., CUIT Nro 30-70918851-4, con domicilio legal en la calle Montevideo Nro 955, 7mo piso Oficina D de la Ciudad Autónoma de Buenos Aires, prestará el servicio ofrecido en la presente propuesta. Los términos 'SmartSecure', 'SmartCommunity', 'SmartEagle' o 'TOPGRADE' refieren indistintamente a esta persona jurídica.";
+
+
+// Network selection
+
+"NetworkSelectionText" = "NETWORK SELECTION";
+"NoNetworkTitle" = "NO NETWORKS";
+"NoNetworkText" = "The user doesn't have active networks. Please contact your service provider.";
+
+
+// Messages
+"Specifications" = "SPECIFICATIONS";
+"EnterMessageText" = "Message to moderator";
+"MessageSendError" = "The message could not been sent. Please try again.";
+"MessageEmptyError" = "The message can't be empty.";
+"MessagesFetchErrorText" = "The messages could not been retreived. Please try again.";
+
+//Moderator Messages
+
+"IncidentTitle" = "Incident:";
+"StartTitle" = "Start:";
+"StateTitle" = "State:";
+"ResolvedState" = "RESOLVED";
+"ActiveState" = "ACTIVE";
+
+"NoEventMessagesText" = "There are no messages to show.";
+
+// Settings
+
+"NoAffinitiesMessagesText" = "There are no affinities associated to this network.";
+"SettingsUpdateErrorText" = "Server error occured. The settings could not been updated. Please try again.";
+"SettingsFetchErrorText" = "Server error ocurred. The settings could not been retreived. Please try again.";

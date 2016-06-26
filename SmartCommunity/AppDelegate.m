@@ -7,16 +7,79 @@
 //
 
 #import "AppDelegate.h"
+#import "KeyChainHelper.h"
 
 @implementation AppDelegate
+@synthesize pushToken;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    // Register this app, on this device
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+         [application registerForRemoteNotifications];
+    } else {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeNone)];
+    }
+#else
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeNone)];
+#endif
+    
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void) purgePushToken : (NSString *) token {
+    
+    if (([token characterAtIndex:0] == '<')
+        && ([token characterAtIndex: ([token length] - 1)] == '>'))
+    {
+        pushToken = [token substringWithRange: NSMakeRange(1, [token length] - 2)];
+    } else {
+        pushToken = token;
+    }
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    [self purgePushToken: [NSString stringWithFormat:@"%@", deviceToken]];
+    
+    [self.viewController updatePushNotificationsId];
+}
+
+- (void) updateData :(NSDictionary *)userInfo {
+    if (userInfo
+        && [userInfo objectForKey:@"smart_message_type"])
+    {
+        if ([[userInfo objectForKey:@"smart_message_type"] isEqualToString:@"SYNC_COMMUNITY_MESSAGES"]) {
+            [self.viewController updateAffinityMessages : [[userInfo objectForKey:@"network_id"] stringValue]];
+        }
+        
+    }
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
+    UIApplicationState state = [[UIApplication sharedApplication] applicationState];
+    
+    if ((state == UIApplicationStateActive)
+        && self.viewController)
+    {
+        // event_id(long) smart_message_type SYNC_EVENTS (string) network_id (int)
+        [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+        
+        [self updateData:userInfo];
+    }
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -27,7 +90,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
@@ -38,7 +101,19 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // TODO Manage refresh when app is back from background.
+    // Chequear que tipo de notificación es y llamar al refresh correspondiente.
+    
+    if (self.viewController)
+    {
+        [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+        
+        KeyChainHelper * keyChain = [[KeyChainHelper alloc] init];
+        NSString *networkId =[[[keyChain loadSelectedNetwork] propertyList] objectForKey:@"id"];
+        if (networkId) {
+            [self.viewController updateAffinityMessages : networkId];
+        }
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

@@ -14,3 +14,26 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+// Integration
+//#define kBaseURL @"http://smart-integration.no-ip.org"
+// Test
+//#define kBaseURL @"http://190.2.33.1:8001"
+#define kBaseURL @"http://apps.smartsecure.com.ar"
+
+
+
+#define kCheckLoginURL [kBaseURL stringByAppendingString:@"/api/v1/community/user/token-auth/"]
+#define kUserInfoUpdate [kBaseURL stringByAppendingString:@"/api/v1/community/user/member_networks_info/"]
+
+
+#define kSendLocalizationURL [kBaseURL stringByAppendingString:@"/api/v1/user/panic_coordinates_message/"]
+
+#define kGetAffinityMessagesURL [kBaseURL stringByAppendingString:@"/api/v1/community/user/messages"]
+
+#define kSettingsURL [kBaseURL stringByAppendingString:@"/api/v1/community/user/settings"]
+
+
+#define kSendPushNotificationTokenURL [kBaseURL stringByAppendingString:@"/api/v1/user/push/register/"]
+

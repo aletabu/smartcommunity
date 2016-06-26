@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    BOOL pushNotificationReceived;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSString *pushToken;
+
+@property (strong, nonatomic) ViewController *viewController;
 
 @end

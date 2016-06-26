@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<applicationName>SmartSecure</applicationName>
+	<applicationVersion>1.0</applicationVersion>
+	<applicationVendor>SmartSecure</applicationVendor>
+	    
+    <attempts>100</attempts>
+    
+    <!-- TIMES IN SECONDS-->
+
+	<timeoutApplication>120</timeoutApplication>
+	<connectionRetry>15</connectionRetry>
+    
+	<panicDelay>3.0</panicDelay>
+	<unblockDelay>3</unblockDelay>
+	<networkReminderPeriod>86400</networkReminderPeriod>
+
+</configuration>
+
